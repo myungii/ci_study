@@ -10,8 +10,27 @@
 </head>
 
 <body>
+	<table border="1">
+		<thead>
+			<tr>
+				<th> id </th>
+				<th> name </th>
+				<th> content </th>
+				<th> timecreated </th>
+			</tr>
+		</thead>
+		<tbody>
+		<?php foreach($test as $list):  ?>	
+			<tr>
+				<td> <?= $list->id; ?> </td>
+				<td> <?= $list->name; ?> </td>
+				<td> <?= $list->content; ?> </td>
+				<td> <?= $list->timecreated; ?> </td>
+			</tr>
+		<?php endforeach; ?>
+		</tbody>
+	</table>
 
-	<?php echo("잘되는 겁니다!"); ?>	
 
 </body>
 </html>
